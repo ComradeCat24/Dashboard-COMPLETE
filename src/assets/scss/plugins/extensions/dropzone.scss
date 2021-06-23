@@ -1,0 +1,34 @@
+// Core variables and mixins
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/mixins";
+
+// Core variables and mixins overrides
+@import "../../core/variables/variables";
+@import "~bootstrap/scss/_variables.scss";
+
+// Overrides user variable
+@import "../../core/variables/components-variables";
+
+.dropzone {
+	min-height: 100px;
+	border: 2px dashed $primary;
+	background: $body-bg;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&:focus {
+		outline: 0;
+	}
+}
+
+.dz-img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.scroll-area {
+	padding: 0rem;
+	max-height: 510px;
+	position: relative;
+}

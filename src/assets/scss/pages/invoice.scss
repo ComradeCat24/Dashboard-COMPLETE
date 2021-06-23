@@ -1,0 +1,77 @@
+// ================================================================================================
+//  File Name: invoice.scss
+//  Description: Invoice Layout page layouts SCSS.
+//  ----------------------------------------------------------------------------------------------
+//  Item Name: bitfringe Dashboard
+//  Version: 2.0
+//  Author: bitfringe
+//  Author URL: http://www.bitfringe.com
+// ================================================================================================
+
+// Core variables and mixins
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/mixins";
+@import "../bootstrap-extended/mixins";
+
+// Load variable overrides
+@import "../core/variables/variables";
+@import "~bootstrap/scss/_variables.scss";
+
+// Overrides user variable
+@import "../core/variables/components-variables";
+
+.invoice-page {
+	padding: 0.2rem;
+}
+
+.invoice-main{
+	width: 100%;
+	display: flex !important;
+	flex-direction: row !important;
+}
+
+td.ocr-table{
+	padding: 0.5rem !important;
+}
+
+.extract-edit {
+	margin-top: 0 !important;
+}
+// media query for print
+@media print {
+	body {
+		visibility: hidden;
+		align-items: center;
+	}
+	.main-menu,
+	.header-navbar-shadow,
+	.header-navbar,
+	.content-header,
+	.invoice-header {
+		display: none;
+	}
+	.invoice-page {
+		visibility: visible;
+		background: black;
+	}
+	.content-wrapper,
+	.app-content,
+	.invoice-page,
+	.card-body,
+	.invoice-wrapper {
+		padding: 0;
+		margin: 0;
+	}
+}
+@page {
+	//  margin for print page
+	margin: 0;
+	padding: 0;
+}
+
+
+@media only screen and (max-width: 1530px) {
+	.invoice-main{
+		flex-direction: column !important;
+	}
+}

@@ -1,0 +1,21 @@
+//  ===============================================================================================
+//  File Name: mixins.scss
+//  Description: Extended mixins file with new mixins features.
+//  ----------------------------------------------------------------------------------------------
+//  Item Name: bitfringe Dashboard
+//  Version: 2.0
+//  Author: bitfringe
+//  Author URL: http://www.bitfringe.com
+//  ================================================================================================
+
+// // Components
+@import "mixins/_buttons";
+@import "mixins/_label";
+
+@import "mixins/_label";
+@import "mixins/_type"; //(NEW)
+
+// // // Components
+@import "mixins/_buttons";
+@import "mixins/_navs";
+@import "mixins/_forms";

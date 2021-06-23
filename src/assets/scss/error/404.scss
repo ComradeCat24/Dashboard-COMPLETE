@@ -1,0 +1,32 @@
+.notfound{
+    pointer-events: none;
+    user-select: none;
+    height: 25vw;
+    animation:spin 60s linear infinite;
+}
+
+.error-head{
+    font-size: 3rem;
+}
+
+.servdown{
+    height: 15vw;
+    margin-bottom: 30px;
+}
+
+.maintain{
+    height: 20vw;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1050px) {
+    .notfound{
+        height: unset;
+    }
+    .error-head{
+        font-size: 2rem !important;
+    }
+    .servdown{
+        height: 15rem;
+    }
+}

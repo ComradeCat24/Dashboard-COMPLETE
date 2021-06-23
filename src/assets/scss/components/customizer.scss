@@ -1,0 +1,100 @@
+/*=========================================================================================
+	File Name: customizer.scss
+	Description: CSS used for demo purpose only. Remove this css from your project.
+	----------------------------------------------------------------------------------------
+	Item Name: bitfringe Dashboard
+	Version: 2.0
+	Author: bitfringe
+	Author URL: http://www.bitfringe.com
+  ==========================================================================================*/
+
+
+
+	.open-icon {
+		//animation: Spin 2s infinite linear;
+		position: relative;
+		top: -4.2px;
+	}
+
+
+
+	// customizer content height
+	.customizer-content {
+		position: relative;
+		height: calc(100% - 7rem);
+
+		.bg-default {
+			background-color: #fff;
+		}
+	}
+
+	//customizer close button
+	.customizer-close {
+		position: absolute;
+		right: 30px;
+		top: 20px;
+		padding: 7px;
+		width: auto;
+		z-index: 10;
+		color: #626262;
+		i {
+			font-size: 1.71rem;
+		}
+	}
+
+	// customizer toggle icon
+	.customizer-toggle {
+		background: #fff;
+		color: $cyan;
+		box-shadow: 0px 0px 2px ;
+		border-radius: 50%;
+		position:relative;
+		margin: auto;
+		margin-right: 5px;
+		top: 21%;
+		width: 34px;
+		height: 34px;
+		text-align: center;
+		line-height: 40px;
+		cursor: pointer;
+	}
+
+	// theme color box styles
+
+
+body.dark-layout {
+	.hide-scroll-top-switch,
+	.collapse-sidebar {
+		.custom-switch {
+			.custom-control-label {
+				&:before {
+					background-color: #10163a;
+				}
+			}
+		}
+	}
+}
+
+.buy-now {
+	position: fixed;
+	bottom: 5%;
+	right: 79px;
+	z-index: 1031;
+	.btn {
+		box-shadow: 0 1px 20px 1px #ea5455 !important;
+		&:hover {
+			box-shadow: none !important;
+		}
+	}
+}
+
+// Spining Animation
+
+@keyframes Spin {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}

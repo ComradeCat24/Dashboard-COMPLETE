@@ -1,0 +1,33 @@
+{
+    "countries": [
+        {
+            "name": "Afghanistan",
+            "isoCode": "AF"
+        },
+        {
+			"name": "Albania",
+            "isoCode": "AL"
+        },
+        {
+            "name": "Algeria",
+            "isoCode": "DZ"
+        },
+        {
+            "name": "American Samoa",
+            "isoCode": "AS"
+        },
+        {
+            "name": "Andorra",
+            "isoCode": "AD"
+        },
+        {
+            "name": "Angola",
+            "isoCode": "AO"
+        },
+        {
+            "name": "Anguilla",
+            "isoCode": "AI"
+        }
+        
+    ]
+}
